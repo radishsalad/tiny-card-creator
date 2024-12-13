@@ -10,21 +10,21 @@ const Card = ({ title, description, imageUrl, className, ...props }: CardProps) 
   return (
     <div
       className={cn(
-        "group w-72 overflow-hidden rounded-xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg",
+        "group w-96 overflow-hidden rounded-2xl bg-white shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl",
         className
       )}
       {...props}
     >
-      <div className="aspect-[4/3] overflow-hidden">
+      <div className="aspect-[16/9] overflow-hidden">
         <img
           src={imageUrl}
           alt={title}
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
         />
       </div>
-      <div className="p-4">
-        <h3 className="mb-2 text-lg font-semibold text-gray-800">{title}</h3>
-        <p className="text-sm text-gray-600">{description}</p>
+      <div className="p-6">
+        <h3 className="mb-3 text-2xl font-bold text-gray-900">{title}</h3>
+        <p className="text-base text-gray-700">{description}</p>
       </div>
     </div>
   );
