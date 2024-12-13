@@ -10,6 +10,7 @@ const Card = ({ title, description, imageUrl, className, ...props }: CardProps) 
   return (
     <div
       className={cn(
+        "group w-96 overflow-hidden rounded-2xl bg-[#ea384c] text-white shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl",
         className
       )}
       {...props}
@@ -22,9 +23,8 @@ const Card = ({ title, description, imageUrl, className, ...props }: CardProps) 
         />
       </div>
       <div className="p-6">
-        <h1>HI!!!</h1>
-        <h3 className="mb-3 text-2xl font-bold text-gray-900">{title}</h3>
-        <p className="text-base text-gray-700">{description}</p>
+        <h3 className="mb-3 text-2xl font-bold text-white">{title}</h3>
+        <p className="text-base text-gray-200">{description}</p>
       </div>
     </div>
   );
