@@ -10,7 +10,7 @@ const Card = ({ title, description, imageUrl, className, ...props }: CardProps) 
   return (
     <div
       className={cn(
-        "group w-96 overflow-hidden rounded-2xl bg-[#1EAEDB] text-white shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl",
+        "group w-96 overflow-hidden rounded-2xl bg-gradient-to-r from-[#1EAEDB] to-[#FFD700] text-white shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl",
         className
       )}
       {...props}
