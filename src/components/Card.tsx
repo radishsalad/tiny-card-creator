@@ -24,7 +24,7 @@ const Card = ({ title, description, imageUrl, className, ...props }: CardProps) 
       </div>
       <div className="p-6">
         <h3 className="mb-3 text-2xl font-bold text-white">JV Custom: {title}</h3>
-        <p className="text-base text-gray-200">{description}</p>
+        <p className="text-base text-red-500">{description}</p>
       </div>
     </div>
   );
