@@ -2,10 +2,10 @@ import Card from "@/components/Card";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <div className="min-h-screen bg-red-500 p-8">
       <header className="mb-12 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-gray-900">Welcome to Our Services</h1>
-        <p className="text-lg text-gray-600">Discover our range of innovative solutions</p>
+        <h1 className="mb-4 text-4xl font-bold text-white">Welcome to Our Services</h1>
+        <p className="text-lg text-gray-100">Discover our range of innovative solutions</p>
       </header>
       
       <div className="mx-auto grid max-w-7xl gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
