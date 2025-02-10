@@ -1,4 +1,3 @@
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -33,14 +32,13 @@ const Index = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real application, you would send this data to your backend
     console.log(values);
     toast.success("Form submitted successfully!");
     form.reset();
   }
 
   return (
-    <div className="min-h-screen bg-blue-500 p-8">
+    <div className="min-h-screen bg-black p-8">
       <header className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-bold text-white">Welcome to Our Services</h1>
         <p className="text-lg text-gray-100">Discover our range of innovative solutions</p>
