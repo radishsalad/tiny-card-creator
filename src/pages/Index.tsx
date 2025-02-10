@@ -1,3 +1,4 @@
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -39,7 +40,7 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-red-500 p-8">
+    <div className="min-h-screen bg-green-500 p-8">
       <header className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-bold text-white">Welcome to Our Services</h1>
         <p className="text-lg text-gray-100">Discover our range of innovative solutions</p>
