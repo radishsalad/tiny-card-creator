@@ -1,4 +1,3 @@
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -42,10 +41,14 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-green-500 p-8">
       <header className="mb-12 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-white">Welcome to Our Services</h1>
-        <p className="text-lg text-gray-100">Discover our range of innovative solutions</p>
+        <h1 className="mb-4 text-4xl font-bold text-white">
+          Welcome to Our Service
+        </h1>
+        <p className="text-lg text-gray-100">
+          Discover our range of innovative solutions
+        </p>
       </header>
-      
+
       <div className="mx-auto grid max-w-7xl gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card
           title="Web Development"
@@ -104,7 +107,11 @@ const Index = () => {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="your.email@example.com" type="email" {...field} />
+                      <Input
+                        placeholder="your.email@example.com"
+                        type="email"
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -123,7 +130,9 @@ const Index = () => {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">Send Message</Button>
+              <Button type="submit" className="w-full">
+                Send Message
+              </Button>
             </form>
           </Form>
         </div>
