@@ -42,7 +42,7 @@ const Index = () => {
     <div className="min-h-screen bg-green-500 p-8">
       <header className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-bold text-white">
-          Welcome to Our Service
+          Welcome to Our Sandbox
         </h1>
         <p className="text-lg text-gray-100">
           Discover our range of innovative solutions
